@@ -1,0 +1,34 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-9.1.1, pluggy-1.7.0 -- C:\Users\derek\Documents\examentopicos\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\derek\Documents\examentopicos
+plugins: anyio-4.16.0
+collecting ... collected 25 items
+
+test_game.py::test_player_wins[piedra-tijera] PASSED                     [  4%]
+test_game.py::test_player_wins[papel-piedra] PASSED                      [  8%]
+test_game.py::test_player_wins[tijera-papel] PASSED                      [ 12%]
+test_game.py::test_computer_wins[piedra-papel] PASSED                    [ 16%]
+test_game.py::test_computer_wins[papel-tijera] PASSED                    [ 20%]
+test_game.py::test_computer_wins[tijera-piedra] PASSED                   [ 24%]
+test_game.py::test_ties[piedra-piedra] PASSED                            [ 28%]
+test_game.py::test_ties[papel-papel] PASSED                              [ 32%]
+test_game.py::test_ties[tijera-tijera] PASSED                            [ 36%]
+test_game.py::test_invalid_player_move_raises_value_error PASSED         [ 40%]
+test_game.py::test_invalid_computer_move_raises_value_error PASSED       [ 44%]
+test_game.py::test_both_invalid_moves_raise_value_error PASSED           [ 48%]
+test_game.py::test_empty_move_raises_value_error[-piedra] PASSED         [ 52%]
+test_game.py::test_empty_move_raises_value_error[piedra-] PASSED         [ 56%]
+test_game.py::test_uppercase_move_raises_value_error[Piedra-papel] PASSED [ 60%]
+test_game.py::test_uppercase_move_raises_value_error[papel-Tijera] PASSED [ 64%]
+test_game.py::test_uppercase_move_raises_value_error[TIJERA-piedra] PASSED [ 68%]
+test_game.py::test_get_computer_move_uses_injected_random[piedra] PASSED [ 72%]
+test_game.py::test_get_computer_move_uses_injected_random[papel] PASSED  [ 76%]
+test_game.py::test_get_computer_move_uses_injected_random[tijera] PASSED [ 80%]
+test_game.py::test_get_computer_move_returns_valid_move PASSED           [ 84%]
+test_game.py::test_update_score_increments_correct_counter[player-expected0] PASSED [ 88%]
+test_game.py::test_update_score_increments_correct_counter[computer-expected1] PASSED [ 92%]
+test_game.py::test_update_score_increments_correct_counter[tie-expected2] PASSED [ 96%]
+test_game.py::test_update_score_invalid_result_raises_value_error PASSED [100%]
+
+============================= 25 passed in 0.06s ==============================
